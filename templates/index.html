@@ -1,0 +1,52 @@
+<!DOCTPYE <html>
+<html lang="en">
+  <head>
+    <title>Inspirational Quotes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/css/main.css') }}">
+    
+  </head>
+  <body>
+    
+    <div id="randomQuoteDiv">
+      <h2 id="randomHeader">Inspirational Quote</h2>
+      <div id="randomQuote">
+      <!-- Random quotes will be displayed here -->
+      </div>
+      <button type="button" id="randomQuoteBtn">Random Quote</button>
+    </div>
+    
+    <div id="listDiv">
+      <h2 id="listHeader">Be Inspired!</h2>
+      <ol id="quoteList">
+        <!-- All quotes will be displayed here -->
+      </ol>
+      <button type="button" id="updateQuoteBtn">Update Quotes</button>
+    </div>
+
+    <div id="selectedQuoteDiv">
+      <h2 id="listHeader">Selected Inspiration!</h2>
+      <input type="text" id="selectedId" disabled>
+      <input type="text" id="selectedQuote" disabled>
+      <input type="text" id="selectedAuthor" disabled>
+      <!-- Selected quotes will be displayed here -->
+      <button type="button" id="deleteQuoteBtn">Remove Quote</button>
+    </div>
+
+    <div id= "formDiv">
+      <h2 id="formHeader">Be Inspiring!</h2>
+      <table id = "inputTable">
+        <tr>
+          <td><input type ="text" id="newQuote" placeholder="New Quote"/></td>
+          <td><input type ="text" id="newAuthor" placeholder="New Quote Author"/></td>
+          <td><input type="button"  value="Add Quote" id="newQuoteBtn"/></td>
+        </tr>
+      </table>
+    </div>  
+
+    <script src="/static/js/script.js"></script> 
+    
+  </body>
+</html>

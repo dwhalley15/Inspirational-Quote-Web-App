@@ -1,0 +1,230 @@
+* {
+  font-family: 'Arial', sans-serif;
+  color: cornsilk;
+}
+
+body{
+  background-image: url("/static/images/background3.jpg");
+  margin: 0;
+}
+
+h2 {
+  margin: 1;
+  text-align: left;
+}
+
+p {
+  font-size: 110%;
+  margin: 10px;
+}
+
+#randomHeader{
+  padding: 10px;
+  margin: 10px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border: 1px solid cornsilk;
+}
+
+button {
+  color: cornsilk;
+  border: 1px solid cornsilk;
+  border-style: indented;
+  background: transparent;
+  padding: 5px;
+  width: 30%;
+  display: block;
+  position: relative;
+  margin-top: 40px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  font-size: 110%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button:hover{
+  color: black;
+  background-color: cornsilk;
+  border: 1px solid black;
+}
+
+label {
+  color: cornsilk;
+  border-style: indented;
+  background: transparent;
+  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  float: left;
+  clear: left;
+  width: 100%;
+}
+
+ul {
+  list-style: none;  
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  color: cornsilk;
+  border: 1px solid cornsilk;
+  border-style: indented;
+  background: transparent;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+  font-size: 110%;
+}
+
+li:hover {
+  color: black;
+  background-color: cornsilk;
+  border: 1px solid black;
+}
+
+input{
+  color: black;
+  font-size: 110%;
+}
+
+#randomQuoteDiv {
+  position: relative;
+  top: 80px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#listDiv {
+  margin: 10px;
+  position: relative;
+  top: 400px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#selectedQuoteDiv {
+  margin: 10px;
+  position: relative;
+  top: 250px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  text-align: center;
+}
+
+#tableDiv {
+  margin: 10px;
+  position: relative;
+  top: 2px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#listHeader {
+  padding: 10px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border: 1px solid cornsilk;
+}
+
+#tableHeader {
+  padding: 10px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border: 1px solid cornsilk;
+}
+
+table, th ,td {
+  padding: 2px;
+  margin-top: 10px;
+  font-size: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  color: cornsilk;
+  border: 1px solid cornsilk;
+  border-style: indented;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  text-align: left;
+  position: relative;
+}
+/*
+td:hover {
+  color: black;
+  background-color: cornsilk;
+  border: 1px solid black;
+}
+*/
+
+input[type=button] {
+  color: cornsilk;
+  border-style: none;
+  background: transparent;
+  padding: 5px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  font-size: 110%;
+}
+
+input[type=button]:hover {
+  color: black;
+  background-color: cornsilk;
+  width: 100%;
+}
+
+#formDiv {
+  margin: 10px;
+  position: relative;
+  top: 250px;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+#formHeader {
+  padding: 10px;
+  background-color: hsla(0, 0%, 0%, 0.7);
+  border: 1px solid cornsilk;
+}
+
+#inputTable{
+  width: 80%;
+  padding: 2px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 110%;
+  margin-left: auto;
+  margin-right: auto;
+  border-style: hidden;
+  background: transparent;
+}
+
+input[type=text] {
+  
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  font-size: 110%;
+}
+
+#selectedQuote{
+  margin-top: 10px;
+  width: 80%;
+}
+
+#selectedAuthor{
+  margin-top: 10px;
+  width: 80%;
+}
+
+#selectedId{
+  margin-top: 10px;
+  width: 80%;
+}
