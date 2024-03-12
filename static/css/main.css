@@ -1,28 +1,39 @@
 * {
   font-family: 'Arial', sans-serif;
   color: cornsilk;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body{
   background-image: url("/static/images/background3.jpg");
-  margin: 0;
+  background-repeat: repeat;
+  background-size: cover;
+  animation: slide 10s linear infinite;
 }
 
-h2 {
-  margin: 1;
-  text-align: left;
+@keyframes slide {
+  0% {
+    background-position: 0 0;
+  }
+  100% {
+    background-position: 100% 0;
+  }
 }
 
-p {
-  font-size: 110%;
-  margin: 10px;
+ul{
+  height: 500px;
+  overflow: auto;
 }
 
-#randomHeader{
+.header{
   padding: 10px;
-  margin: 10px;
   background-color: hsla(0, 0%, 0%, 0.7);
   border: 1px solid cornsilk;
+  text-align: left;
+  width: auto;
+  margin: 10px;
 }
 
 button {
@@ -47,25 +58,7 @@ button:hover{
   color: black;
   background-color: cornsilk;
   border: 1px solid black;
-}
-
-label {
-  color: cornsilk;
-  border-style: indented;
-  background: transparent;
-  font-weight: bold;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  padding: 5px;
-  float: left;
-  clear: left;
-  width: 100%;
-}
-
-ul {
-  list-style: none;  
-  margin: 0;
-  padding: 0;
+  cursor: pointer;
 }
 
 li {
@@ -87,59 +80,12 @@ li:hover {
   color: black;
   background-color: cornsilk;
   border: 1px solid black;
+  cursor: pointer;
 }
 
-input{
-  color: black;
-  font-size: 110%;
-}
-
-#randomQuoteDiv {
-  position: relative;
-  top: 80px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
+.container{
+  width: 100%;
   text-align: center;
-  margin: 10px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
-#listDiv {
-  margin: 10px;
-  position: relative;
-  top: 400px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#selectedQuoteDiv {
-  margin: 10px;
-  position: relative;
-  top: 250px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-  text-align: center;
-}
-
-#tableDiv {
-  margin: 10px;
-  position: relative;
-  top: 2px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#listHeader {
-  padding: 10px;
-  background-color: hsla(0, 0%, 0%, 0.7);
-  border: 1px solid cornsilk;
-}
-
-#tableHeader {
-  padding: 10px;
-  background-color: hsla(0, 0%, 0%, 0.7);
-  border: 1px solid cornsilk;
 }
 
 table, th ,td {
@@ -154,49 +100,11 @@ table, th ,td {
   background-color: hsla(0, 0%, 0%, 0.3);
   text-align: left;
   position: relative;
-}
-/*
-td:hover {
-  color: black;
-  background-color: cornsilk;
-  border: 1px solid black;
-}
-*/
-
-input[type=button] {
-  color: cornsilk;
-  border-style: none;
-  background: transparent;
-  padding: 5px;
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  font-size: 110%;
-}
-
-input[type=button]:hover {
-  color: black;
-  background-color: cornsilk;
-  width: 100%;
-}
-
-#formDiv {
-  margin: 10px;
-  position: relative;
-  top: 250px;
-  -ms-transform: translateY(-50%);
-  transform: translateY(-50%);
-}
-
-#formHeader {
-  padding: 10px;
-  background-color: hsla(0, 0%, 0%, 0.7);
-  border: 1px solid cornsilk;
+  table-layout:fixed;
 }
 
 #inputTable{
   width: 80%;
-  padding: 2px;
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 110%;
@@ -207,11 +115,34 @@ input[type=button]:hover {
 }
 
 input[type=text] {
-  
+  background-color: transparent;
   margin-left: auto;
   margin-right: auto;
   width: 100%;
   font-size: 110%;
+  color: cornsilk;
+  box-shadow: none;
+  outline: none;
+  border: none;
+  padding: 8px;
+}
+
+input[type=text]:focus{
+  outline: none;
+  box-shadow: none;
+  border-bottom: none;
+  color: black;
+  background-color: cornsilk;
+}
+
+input[type=text]:disabled {
+  border-style: inset;
+  border-color: cornsilk;
+}
+
+input[type=text]:not([disabled]):hover {
+  color: black;
+  background-color: cornsilk;
 }
 
 #selectedQuote{
@@ -227,4 +158,17 @@ input[type=text] {
 #selectedId{
   margin-top: 10px;
   width: 80%;
+}
+
+#randomQuote{
+  padding: 8px;
+}
+
+@media only screen and (max-width: 600px) {
+  td {
+      display: block;
+  }
+  body{
+    animation: slide 20s linear infinite;
+  }
 }

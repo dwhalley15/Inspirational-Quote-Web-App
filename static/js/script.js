@@ -53,7 +53,7 @@ function getQuotes(){
     }
     else if (this.status >= 300 && this.status <= 500){
       alert("Error: Problem communicating with server.");
-      error = "<li>" + "Error: no data retrieved!" + "</li>" + "<li>" + "Please check server files" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>" + "<li>" + "</li>";
+      error = "<li>" + "Error: no data retrieved!" + "</li>" + "<li>" + "Please check server files" + "</li>";
       document.getElementById("quoteList").innerHTML = error;
     }
   }
@@ -102,6 +102,8 @@ function addQuote(){
     newItem.setAttribute("author", newAuthor);
     newItem.innerText = newQuote + " - " + newAuthor;
     document.getElementById("quoteList").appendChild(newItem);
+    document.getElementById("newQuote").value = "";
+    document.getElementById("newAuthor").value = "";
     alert("New quote added, click 'Update Quotes' to save!");
   }
 }

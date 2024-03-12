@@ -9,25 +9,24 @@
     
   </head>
   <body>
-    
-    <div id="randomQuoteDiv">
-      <h2 id="randomHeader">Inspirational Quote</h2>
+    <div class="container">
+      <h2 class="header" id="randomHeader">Inspirational Quotes</h2>
       <div id="randomQuote">
       <!-- Random quotes will be displayed here -->
       </div>
       <button type="button" id="randomQuoteBtn">Random Quote</button>
     </div>
     
-    <div id="listDiv">
-      <h2 id="listHeader">Be Inspired!</h2>
-      <ol id="quoteList">
+    <div class="container">
+      <h2 class="header">Be Inspired!</h2>
+      <ul id="quoteList">
         <!-- All quotes will be displayed here -->
-      </ol>
+      </ul>
       <button type="button" id="updateQuoteBtn">Update Quotes</button>
     </div>
 
-    <div id="selectedQuoteDiv">
-      <h2 id="listHeader">Selected Inspiration!</h2>
+    <div class="container">
+      <h2 class="header">Selected Inspiration!</h2>
       <input type="text" id="selectedId" disabled>
       <input type="text" id="selectedQuote" disabled>
       <input type="text" id="selectedAuthor" disabled>
@@ -35,17 +34,20 @@
       <button type="button" id="deleteQuoteBtn">Remove Quote</button>
     </div>
 
-    <div id= "formDiv">
-      <h2 id="formHeader">Be Inspiring!</h2>
-      <table id = "inputTable">
+    <div class="container">
+      <h2 class="header">Be Inspiring!</h2>
+      <table id="inputTable">
         <tr>
           <td><input type ="text" id="newQuote" placeholder="New Quote"/></td>
           <td><input type ="text" id="newAuthor" placeholder="New Quote Author"/></td>
-          <td><input type="button"  value="Add Quote" id="newQuoteBtn"/></td>
         </tr>
       </table>
+      <button type="button" id="newQuoteBtn">Add Quote</button>
     </div>  
 
+    <div class="container">
+      <h2 class="header">Inspiration never ends!</h2>
+    </div>
     <script src="/static/js/script.js"></script> 
     
   </body>
