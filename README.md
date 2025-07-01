@@ -31,6 +31,7 @@ A simple web application built with **Python Flask** and vanilla **JavaScript** 
 ```bash
 git clone https://github.com/your-username/inspirational-quotes-app.git
 cd inspirational-quotes-app
+```
 
 2. **Install dependencies**
 
@@ -38,11 +39,13 @@ Make sure you have Python installed (version 3.6+ recommended).
 
 ```bash
 pip install flask
+```
 
 3. **Run the Flask app**
 
 ```bash
 python app.py
+```
 
 4. **Open your browser**
 
